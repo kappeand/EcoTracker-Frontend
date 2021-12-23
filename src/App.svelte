@@ -23,6 +23,15 @@
 				<li class="nav-item">
 					<a class="nav-link" href="#/demo">Demo</a>
 				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#/persons">Persons</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#/pathogens"> Pathogens </a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#/infections"> Infections </a>
+				</li>
 			</ul>
 		</div>
 	</div>
