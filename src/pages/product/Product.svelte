@@ -18,7 +18,7 @@
 </script>
 
 <div class="mb-5">
-    <h1 class="mt-3">List of all Infections</h1>
+    <h1 class="mt-3">List of all Products</h1>
     <table class="table">
         <thead>
             <tr>

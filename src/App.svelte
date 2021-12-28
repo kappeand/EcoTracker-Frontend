@@ -24,13 +24,13 @@
 					<a class="nav-link" href="#/demo">Demo</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="#/persons">Persons</a>
+					<a class="nav-link" href="#/product">Product</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="#/pathogens"> Pathogens </a>
+					<a class="nav-link" href="#/supplier"> Supplier </a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="#/infections"> Infections </a>
+					<a class="nav-link" href="#/customer"> Customer </a>
 				</li>
 			</ul>
 		</div>
