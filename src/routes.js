@@ -2,16 +2,16 @@
 import Home from "./pages/Home.svelte";
 import DemoPage from "./pages/DemoPage.svelte"
 
-import Products from "./pages/products/products.svelte"
-import AddProduct from "./pages/products/addproduct.svelte"
+import Product from "./pages/product/Product.svelte"
+import AddProduct from "./pages/product/AddProduct.svelte"
 
 import Supplier from "./pages/supplier/Supplier.svelte"
 import SupplierDetails from "./pages/supplier/SupplierDetails.svelte"
 import CreateSupplier from "./pages/supplier/CreateSupplier.svelte"
 
-import Customers from "./pages/customer/customers.svelte"
-import CustomerDetails from "./pages/customer/customerDetails.svelte"
-import CreateCustomer from "./pages/customer/createCustomer.svelte"
+import Customer from "./pages/customer/Customer.svelte"
+import CustomerDetails from "./pages/customer/CustomerDetails.svelte"
+import CreateCustomer from "./pages/customer/CreateCustomer.svelte"
 
 // Export the route definition object
 export default {
@@ -21,7 +21,7 @@ export default {
     '/demo': DemoPage,
 
     // infections
-    '/products': Products,
+    '/product': Product,
     '/addproduct': AddProduct,
     
     // supplier
@@ -30,7 +30,7 @@ export default {
     '/create-supplier': CreateSupplier,
 
     // customer
-    '/customers': Customers,
-    '/customers/:id': CustomerDetails,
+    '/customer': Customer,
+    '/customer/:id': CustomerDetails,
     '/create-customer': CreateCustomer,
 }
