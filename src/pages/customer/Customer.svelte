@@ -10,7 +10,7 @@
 
     function getPathogens() {
         axios
-            .get("http://localhost:8080/infections/pathogens")
+            .get("http://localhost:8080/ecotracker/customer")
             .then((response) => {
                 pathogens = response.data;
             });
@@ -19,7 +19,7 @@
 
 <div class="mb-5">
     <h1 class="mt-3">List of all Pathogens</h1>
-    <a href="#/create-pathogen">+ Add Pathogen</a>
+    <a href="#/createCustomer">+ Add Pathogen</a>
     <table class="table">
         <thead>
             <tr>
@@ -32,7 +32,7 @@
             {#each pathogens as pathogen}
                 <tr>
                 <td>
-                    <a href={"#/pathogens/" + pathogen.id}>
+                    <a href={"#/customer/" + pathogen.id}>
                         {pathogen.id}
                     </a>
                 </td>

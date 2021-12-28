@@ -2,53 +2,50 @@
     import axios from "axios";
     import { onMount } from "svelte";
 
-    let infections = [];
+    let products = [];
 
     onMount(() => {
-        getInfections();
+        getProducts();
     });
 
-    function getInfections() {
+    function getProducts() {
         axios
-            .get("http://localhost:8080/infections/infections")
+            .get("http://localhost:8080/ecotracker/product")
             .then((response) => {
-                infections = response.data;
+                products = response.data;
             });
     }
 </script>
 
 <div class="mb-5">
     <h1 class="mt-3">List of all Infections</h1>
-    <div>
-        <a href="#/create-infection">+ Add Infection</a>
-    </div>
     <table class="table">
         <thead>
             <tr>
                 <th>ID</th>
-                <th>Location</th>
-                <th>Time</th>
-                <th>Pathogen ID</th>
-                <th>Person ID</th>
+                <th>Bio</th>
+                <th>CO2</th>
+                <th>Supplier ID</th>
+                <th>Customer ID</th>
             </tr>
         </thead>
         <tbody>
-            {#each infections as infection}
+            {#each products as product}
                 <tr>
                     <td>
-                        {infection.id}
+                        {product.id}
                     </td>
                     <td>
-                        {infection.location}
+                        {product.bio}
                     </td>
                     <td>
-                        {infection.time}
+                        {product.co2_emission}
                     </td>
                     <td>
-                        {infection.pathogen.id}
+                        {product.supplier.id}
                     </td>
                     <td>
-                        {infection.person.id}
+                        {product.customer.id}
                     </td>
                 </tr>
             {/each}
