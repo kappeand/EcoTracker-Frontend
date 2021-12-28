@@ -24,12 +24,12 @@ export default {
     '/products': Products,
     '/addproduct': AddProduct,
     
-    // persons
+    // supplier
     '/supplier': Supplier,
     '/supplier/:id': SupplierDetails,
     '/create-supplier': CreateSupplier,
 
-    // pathogens
+    // customer
     '/customers': Customers,
     '/customers/:id': CustomerDetails,
     '/create-customer': CreateCustomer,
