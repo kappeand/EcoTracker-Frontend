@@ -2,16 +2,16 @@
 import Home from "./pages/Home.svelte";
 import DemoPage from "./pages/DemoPage.svelte"
 
-import Infections from "./pages/infections/Infections.svelte"
-import CreateInfection from "./pages/infections/CreateInfection.svelte"
+import Products from "./pages/products/products.svelte"
+import AddProduct from "./pages/products/addproduct.svelte"
 
-import Persons from "./pages/persons/Persons.svelte"
-import PersonDetails from "./pages/persons/PersonDetails.svelte"
-import CreatePerson from "./pages/persons/CreatePerson.svelte"
+import Supplier from "./pages/supplier/Supplier.svelte"
+import SupplierDetails from "./pages/supplier/SupplierDetails.svelte"
+import CreateSupplier from "./pages/supplier/CreateSupplier.svelte"
 
-import Pathogens from "./pages/pathogens/Pathogens.svelte"
-import PathogenDetails from "./pages/pathogens/PathogenDetails.svelte"
-import CreatePathogen from "./pages/pathogens/CreatePathogen.svelte"
+import Customers from "./pages/customer/customers.svelte"
+import CustomerDetails from "./pages/customer/customerDetails.svelte"
+import CreateCustomer from "./pages/customer/createCustomer.svelte"
 
 // Export the route definition object
 export default {
@@ -21,16 +21,16 @@ export default {
     '/demo': DemoPage,
 
     // infections
-    '/infections': Infections,
-    '/create-infection': CreateInfection,
+    '/products': Products,
+    '/addproduct': AddProduct,
     
     // persons
-    '/persons': Persons,
-    '/persons/:id': PersonDetails,
-    '/create-person': CreatePerson,
+    '/supplier': Supplier,
+    '/supplier/:id': SupplierDetails,
+    '/create-supplier': CreateSupplier,
 
     // pathogens
-    '/pathogens': Pathogens,
-    '/pathogens/:id': PathogenDetails,
-    '/create-pathogen': CreatePathogen,
+    '/customers': Customers,
+    '/customers/:id': CustomerDetails,
+    '/create-customer': CreateCustomer,
 }
