@@ -3,7 +3,7 @@ import Home from "./pages/Home.svelte";
 import DemoPage from "./pages/DemoPage.svelte"
 
 import Product from "./pages/product/Product.svelte"
-import AddProduct from "./pages/product/AddProduct.svelte"
+
 
 import Supplier from "./pages/supplier/Supplier.svelte"
 import SupplierDetails from "./pages/supplier/SupplierDetails.svelte"

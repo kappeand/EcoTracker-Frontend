@@ -1,1 +1,6 @@
-<h1>This is a demo page</h1>
+<h1>EcoTracker</h1>
+
+
+<img src="" alt="EcoTracker">
+
+// Bild von Sofia holen
