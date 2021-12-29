@@ -9,7 +9,7 @@
 
     function addPerson() {
         axios
-            .post("http://localhost:8080/infections/persons", person)
+            .post("http://localhost:8080/supplier/", person)
             .then((response) => {
                 alert("Person added");
                 console.log(response.data);

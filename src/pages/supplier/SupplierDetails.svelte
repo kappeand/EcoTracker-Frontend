@@ -14,7 +14,7 @@
 
     function getPerson() {
         axios
-            .get("http://localhost:8080/infections/persons/" + personId)
+            .get("http://localhost:8080/supplier/" + personId)
             .then((response) => {
                 person = response.data;
             });

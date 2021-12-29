@@ -10,7 +10,7 @@
 
     function getProducts() {
         axios
-            .get("http://localhost:8080/ecotracker/product")
+            .get("http://localhost:8080/product")
             .then((response) => {
                 products = response.data;
             });

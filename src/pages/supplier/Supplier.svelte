@@ -2,7 +2,7 @@
     import axios from "axios";
     import { onMount } from "svelte";
 
-    let persons = [];
+    let suppliers = [];
 
     onMount(() => {
         getPersons();
@@ -10,7 +10,7 @@
 
     function getPersons() {
         axios
-            .get("http://localhost:8080/infections/persons")
+            .get("http://localhost:8080/supplier")
             .then((response) => {
                 persons = response.data;
             });
@@ -18,29 +18,25 @@
 </script>
 
 <div class="mb-5">
-    <h1 class="mt-3">List of all Persons</h1>
-    <a href="#/create-person">+ Add Person</a>
+    <h1 class="mt-3">List of all Supplier</h1>
+    <a href="#/create-person">+ Add Supplier</a>
     <table class="table">
         <thead>
             <tr>
                 <th>ID</th>
-                <th>Name</th>
-                <th>Birthdate</th>
+                <th>Adress ID</th>
             </tr>
         </thead>
         <tbody>
-            {#each persons as person}
+            {#each suppliers as supplier}
                 <tr>
                     <td>
-                        <a href={"#/persons/" + person.id}>
-                            {person.id}
+                        <a href={"#/supplier/" + supplier.id}>
+                            {supplier.id}
                         </a>
                     </td>
                     <td>
-                        {person.name}
-                    </td>
-                    <td>
-                        {person.birthdate}
+                        {supplier.address_id}
                     </td>
                 </tr>
             {/each}
