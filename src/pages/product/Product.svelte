@@ -10,11 +10,14 @@
 
     function getProducts() {
         axios
-            .get("http://localhost:8080/product")
+            .get("http://localhost:8080/product/all")
             .then((response) => {
                 products = response.data;
             });
     }
+
+
+    
 </script>
 
 <div class="mb-5">
@@ -33,19 +36,19 @@
             {#each products as product}
                 <tr>
                     <td>
-                        {product.id}
+                        {product.all.id}
                     </td>
                     <td>
-                        {product.bio}
+                        {product.name}
                     </td>
                     <td>
-                        {product.co2_emission}
+                        {product.co2emission}
                     </td>
                     <td>
-                        {product.supplier.id}
+                        hallo
                     </td>
                     <td>
-                        {product.customer.id}
+                        name
                     </td>
                 </tr>
             {/each}
