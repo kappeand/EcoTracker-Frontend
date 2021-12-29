@@ -1,42 +1,54 @@
 <script>
-    let pathogen = {
-        icd10: "",
-        incubation: null,
+    let customer = {
+        name: "",
+        co2_rating: "",
+        cumulus_number: "",
+        address_id: "",
     };
 
-    function addPathogen() {
+    function addCustomer() {
         // TODO: POST with axios (like in CreatePerson.svelte)
 
-        console.log("adding pathogen: " + JSON.stringify(pathogen));
+        console.log("adding customer: " + JSON.stringify(customer));
 
         // reset input fields
-        pathogen.icd10 = "";
-        pathogen.incubation = null;
+        customer.name = "";
+        customer.co2_rating = "";
+        customer.cumulus_number = "",
+        customer.address_id = "",
     }
 </script>
 
 <div class="mb-5">
-    <h1 class="mt-3">Add a pathogen</h1>
+    <h1 class="mt-3">Add a customer</h1>
 
     <form>
         <div class="mb-3">
-            <label for="" class="form-label">ICD-10</label>
+            <label for="" class="form-label">Name</label>
             <input
                 class="form-control"
                 type="text"
-                bind:value={pathogen.icd10}
+                bind:value={customer.name}
             />
         </div>
         <div class="mb-3">
-            <label for="" class="form-label">Incubation</label>
+            <label for="" class="form-label">CO2-Rating</label>
             <input
                 class="form-control"
                 type="number"
-                bind:value={pathogen.incubation}
+                bind:value={customer.co2_rating}
             />
         </div>
-        <button on:click={addPathogen} type="button" class="btn btn-primary">
-            Add Pathogen
+        <div class="mb-3">
+            <label for="" class="form-label">Cumulus-Number</label>
+            <input 
+                class="form-control"
+                type="number">
+                bind:value={customer.cumulus_number}
+                />
+        </div>
+        <button on:click={addCustomer} type="button" class="btn btn-primary">
+            Add Customer
         </button>
     </form>
 </div>

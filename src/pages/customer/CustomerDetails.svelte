@@ -2,26 +2,27 @@
     import axios from "axios";
 
     export let params = {};
-    let pathogenId;
+    let customerId;
 
     $: {
-        pathogenId = params.id;
-        getPathogen();
+        customerId = params.id;
+        getCustomer();
     }
-    let pathogen = {};
+    let customer = {};
 
-    function getPathogen() {
-        console.log("getpa")
+    function getCustomer() {
+        console.log("getCustomer")
         axios
-            .get("http://localhost:8080/infections/pathogens/" + pathogenId)
+            .get("http://localhost:8080/ecotracker/customer/" + customerId)
             .then((response) => {
-                pathogen = response.data;
+                customer = response.data;
             });
     }
 </script>
 
 <div class="mb-5">
-    <h1 class="mt-3">Pathogen (ID: {pathogenId})</h1>
-    <p>ICD-10: {pathogen.icd10}</p>
-    <p>Incubation: {pathogen.incubation}</p>
-</div>
+    <h1 class="mt-3">Customer (ID: {customerId})</h1>
+    <p>Name: {customer.name}</p>
+    <p>CO2-Rating: {customer.co2_rating}</p>
+    <p>Cumulus-Number: {customer.cumulus_number}</p>
+    </div>
