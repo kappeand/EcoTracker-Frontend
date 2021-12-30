@@ -3,11 +3,12 @@ import Home from "./pages/Home.svelte";
 
 
 import Product from "./pages/product/Product.svelte"
+import CreateProduct from "./pages/product/CreateProduct.svelte"
 
 
 import Supplier from "./pages/supplier/Supplier.svelte"
 import SupplierDetails from "./pages/supplier/SupplierDetails.svelte"
-import CreateSupplier from "./pages/supplier/CreateSupplier.svelte"
+
 
 import Customer from "./pages/customer/Customer.svelte"
 import CustomerDetails from "./pages/customer/CustomerDetails.svelte"
@@ -21,11 +22,11 @@ export default {
 
     // product
     '/product': Product,
+    '/create-product': CreateProduct,
     
     // supplier
     '/supplier': Supplier,
     '/supplier/:id': SupplierDetails,
-    '/create-supplier': CreateSupplier,
 
     // customer
     '/customer': Customer,

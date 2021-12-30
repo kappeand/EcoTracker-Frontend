@@ -25,4 +25,11 @@
     <h1 class="mt-3">Supplier (ID: {supplierId})</h1>
     <p>Name: {supplier.name}</p>
     <p>Birthdate: </p>
+
+    
 </div>
+
+
+
+
+

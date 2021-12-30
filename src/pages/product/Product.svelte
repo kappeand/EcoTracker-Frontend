@@ -22,6 +22,7 @@
 
 <div class="mb-5">
     <h1 class="mt-3">List of all Products</h1>
+    <a href="#/createProduct">Add Product</a>
     <table class="table">
         <thead>
             <tr>
