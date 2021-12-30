@@ -22,7 +22,6 @@ export default {
 
     // infections
     '/product': Product,
-    //'/addproduct': AddProduct,
     
     // supplier
     '/supplier': Supplier,

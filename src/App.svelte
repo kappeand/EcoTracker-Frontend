@@ -21,26 +21,16 @@
 		<div class="collapse navbar-collapse" id="navbarNavDropdown">
 			<ul class="navbar-nav">
 				<li class="nav-item">
-					<a class="nav-link" href="/demo">Demo</a>
+					<a class="nav-link" href="#/demo">Demo</a>
 				</li>
 				<li class="nav-item">
-<<<<<<< HEAD
-					<a class="nav-link" href="#/product">Product</a>
+					<a class="nav-link" href="#/supplier">Supplier</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="#/supplier"> Supplier </a>
+					<a class="nav-link" href="#/customer"> Customers </a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="#/customer"> Customer </a>
-=======
-					<a class="nav-link" href="/supplier">Supplier</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="/customer"> Customers </a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="/product"> Products </a>
->>>>>>> 13dba7cb979666f6271bc28d394bcb4d5a084f05
+					<a class="nav-link" href="#/product"> Products </a>
 				</li>
 			</ul>
 		</div>

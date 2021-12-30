@@ -10,7 +10,7 @@
 
     function getCustomers() {
         axios
-            .get("http://localhost:8080/ecotracker/customer")
+            .get("http://localhost:8080/customer")
             .then((response) => {
                 customer = response.data;
             });
