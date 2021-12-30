@@ -3,10 +3,7 @@ import Home from "./pages/Home.svelte";
 import DemoPage from "./pages/DemoPage.svelte"
 
 import Product from "./pages/product/Product.svelte"
-<<<<<<< HEAD
-=======
 
->>>>>>> 13dba7cb979666f6271bc28d394bcb4d5a084f05
 
 import Supplier from "./pages/supplier/Supplier.svelte"
 import SupplierDetails from "./pages/supplier/SupplierDetails.svelte"
@@ -25,6 +22,7 @@ export default {
 
     // infections
     '/product': Product,
+    //'/addproduct': AddProduct,
     
     // supplier
     '/supplier': Supplier,

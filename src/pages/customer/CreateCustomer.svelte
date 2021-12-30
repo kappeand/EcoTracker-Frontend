@@ -14,8 +14,8 @@
         // reset input fields
         customer.name = "";
         customer.co2_rating = "";
-        customer.cumulus_number = "",
-        customer.address_id = "",
+        customer.cumulus_number = "";
+        customer.address_id = "";
     }
 </script>
 
