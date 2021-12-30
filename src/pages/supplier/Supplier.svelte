@@ -36,7 +36,9 @@
             {#each suppliers as supplier}
                 <tr>
                     <td>
-                        {supplier.id}
+                        <a href={"#/supplier/" + supplier.id}>
+                            {supplier.id}
+                        </a>
                     </td>
                     <td>
                         test

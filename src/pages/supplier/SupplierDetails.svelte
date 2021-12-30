@@ -8,10 +8,10 @@
         supplierId = params.id;
         getSupplier();
     }
-
     let supplier = {};
 
     function getSupplier() {
+        console.log("getSupplier")
         axios
             .get("http://localhost:8080/supplier/" + supplierId)
             .then((response) => {
@@ -22,7 +22,7 @@
 </script>
 
 <div class="mb-5">
-    <h1 class="mt-3">Person (ID: {supplierId})</h1>
+    <h1 class="mt-3">Supplier (ID: {supplierId})</h1>
     <p>Name: </p>
     <p>Birthdate: </p>
 </div>
