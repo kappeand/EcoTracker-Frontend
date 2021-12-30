@@ -42,13 +42,13 @@
                     {c.name}
                 </td>
                 <td>
-                    {c.co2_rating}
+                    {c.co2rating}
                 </td>
                 <td>
-                    {c.cumulus_number}
+                    {c.cumulusnumber}
                 </td>
                 <td>
-                    {c.address_id}
+                    {c.addressid}
                 </td>
             </tr>
             {/each}
