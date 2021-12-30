@@ -26,7 +26,7 @@
         axios
         .delete("http://localhost:8080/customer/" + customerId)
         .then((response)=> {
-            alert("Customer is deleted");
+            alert("Customer was deleted");
         });
     }
 </script>
