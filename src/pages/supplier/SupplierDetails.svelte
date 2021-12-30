@@ -23,6 +23,6 @@
 
 <div class="mb-5">
     <h1 class="mt-3">Supplier (ID: {supplierId})</h1>
-    <p>Name: </p>
+    <p>Name: {supplier.name}</p>
     <p>Birthdate: </p>
 </div>

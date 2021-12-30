@@ -41,7 +41,7 @@
                         </a>
                     </td>
                     <td>
-                        test
+                        {supplier.name}
                     </td>
                     <td>
                         test
