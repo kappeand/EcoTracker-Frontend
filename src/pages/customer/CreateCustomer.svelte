@@ -3,10 +3,11 @@
         name: "",
         co2rating: "",
         cumulusNumber: "",
-        houseNumber:"",
+        adress:{houseNumber:"",
         postalCode:"",
         phoneNumber:"",
-        email:"",
+        email:""}
+        
     };
 
     function addCustomer() {
@@ -28,10 +29,10 @@
         customer.name = "";
         customer.co2rating = "";
         customer.cumulusNumber = "";
-        customer.houseNumber = "";
-        customer.postalCode = "";
-        customer.phoneNumber = "";
-        customer.email = "";
+        customer.address.houseNumber = "";
+        customer.address.postalCode = "";
+        customer.address.phoneNumber = "";
+        customer.address.email = "";
     }
 </script>
 

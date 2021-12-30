@@ -9,6 +9,7 @@
         getCustomer();
     }
     let customer = {};
+    let address = {};
 
     function getCustomer() {
         console.log("getCustomer")
@@ -16,7 +17,7 @@
             .get("http://localhost:8080/customer/" + customerId)
             .then((response) => {
                 customer = response.data;
-                console.log(customer)
+                address = customer.address;
             });
     }
 </script>
@@ -26,9 +27,10 @@
     <p>Name: {customer.name}</p>
     <p>CO2 Rating: {customer.co2rating}</p>
     <p>Cumulus Number: {customer.cumulusNumber}</p>
-     <p>Phone Number: {customer.address.phoneNumber}</p>
-    <p>Email: {customer.address.email}</p>
+    <p>Phone Number: {address.phoneNumber}</p>
+    <p>Email: {address.email}</p>
     </div>
+
 
 
 
