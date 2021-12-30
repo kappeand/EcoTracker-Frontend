@@ -19,7 +19,10 @@
 
 <div class="mb-5">
     <h1 class="mt-3">List of all Customers</h1>
-    <a href="#/createCustomer">Add customer</a>
+    <br>
+    <a href="#/createCustomer/">Add customer</a>
+    <br>
+    <br>
     <table class="table">
         <thead>
             <tr>
