@@ -26,35 +26,37 @@
         <thead>
             <tr>
                 <th>ID</th>
-                <th>Bio</th>
-                <th>CO2</th>
-                <th>Supplier ID</th>
-                <th>Customer ID</th>
+                <th>Name</th>
+                <th>Test</th>
+                <th>Test</th>
+                <th>Test</th>
             </tr>
         </thead>
         <tbody>
             {#each suppliers as supplier}
                 <tr>
                     <td>
-                        {supplier.id}
+                        <a href={"#/supplier/" + supplier.id}>
+                            {supplier.id}
+                        </a>
                     </td>
                     <td>
                         {supplier.name}
                     </td>
                     <td>
-                        hallo
+                        test
                     </td>
                     <td>
-                        hallo
+                        test
                     </td>
                     <td>
-                        name
+                        test
                     </td>
                 </tr>
             {/each}
         </tbody>
     </table>
-    
+
 </div>
 
 <style>

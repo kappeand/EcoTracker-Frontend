@@ -2,27 +2,27 @@
     import axios from "axios";
 
     export let params = {};
-
-    let personId;
+    let supplierId;
 
     $: {
-        personId = params.id;
-        getPerson();
+        supplierId = params.id;
+        getSupplier();
     }
+    let supplier = {};
 
-    let person = {};
-
-    function getPerson() {
+    function getSupplier() {
+        console.log("getSupplier")
         axios
-            .get("http://localhost:8080/supplier/" + personId)
+            .get("http://localhost:8080/supplier/" + supplierId)
             .then((response) => {
-                person = response.data;
+                supplier = response.data;
+                console.log(supplier)
             });
     }
 </script>
 
 <div class="mb-5">
-    <h1 class="mt-3">Person (ID: {personId})</h1>
-    <p>Name: {person.name}</p>
-    <p>Birthdate: {person.birthdate}</p>
+    <h1 class="mt-3">Supplier (ID: {supplierId})</h1>
+    <p>Name: {supplier.name}</p>
+    <p>Birthdate: </p>
 </div>

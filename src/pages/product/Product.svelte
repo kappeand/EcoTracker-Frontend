@@ -28,8 +28,8 @@
                 <th>ID</th>
                 <th>Bio</th>
                 <th>CO2</th>
-                <th>Supplier ID</th>
-                <th>Customer ID</th>
+                <th>Price</th>
+                <th>Country Of Origin</th>
             </tr>
         </thead>
         <tbody>
@@ -45,10 +45,10 @@
                         {product.co2emission}
                     </td>
                     <td>
-                        hallo
+                        {product.price}
                     </td>
                     <td>
-                        name
+                        {product.countryOfOrigin}
                     </td>
                 </tr>
             {/each}
