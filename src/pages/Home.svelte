@@ -36,17 +36,17 @@
 
    // Product Script Teil (Variable oben)
 
-onMount(() => {
-    getProducts();
-});
+   onMount(() => {
+        getProducts();
+    });
 
-function getProducts() {
-    axios
-        .get("http://localhost:8080/product/all")
-        .then((response) => {
-            products = response.data;
-        });
-}
+    function getProducts() {
+        axios
+            .get("http://localhost:8080/product/all")
+            .then((response) => {
+                products = response.data;
+            });
+    }
 
 //Supplier script Teil (Variable oben)
 
@@ -125,42 +125,43 @@ onMount(() => {
       </h2>
       <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
         <div class="accordion-body">
-            <div class="mb-5">
-   
-                <table class="table">
-                    <thead>
-                        <tr>
-                            <th>ID</th>
-                            <th>Bio</th>
-                            <th>CO2</th>
-                            <th>Supplier ID</th>
-                            <th>Customer ID</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        {#each products as product}
-                            <tr>
-                                <td>
-                                    {product.id}
-                                </td>
-                                <td>
-                                    {product.name}
-                                </td>
-                                <td>
-                                    {product.co2emission}
-                                </td>
-                                <td>
-                                    hallo
-                                </td>
-                                <td>
-                                    name
-                                </td>
-                            </tr>
-                        {/each}
-                    </tbody>
-                </table>
-                
-            </div>
+            
+<div class="mb-5">
+    <h1 class="mt-3">List of all Products</h1>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Bio</th>
+                <th>CO2</th>
+                <th>Price</th>
+                <th>Country Of Origin</th>
+            </tr>
+        </thead>
+        <tbody>
+            {#each products as product}
+                <tr>
+                    <td>
+                        {product.id}
+                    </td>
+                    <td>
+                        {product.name}
+                    </td>
+                    <td>
+                        {product.co2emission}
+                    </td>
+                    <td>
+                        {product.price}
+                    </td>
+                    <td>
+                        {product.countryOfOrigin}
+                    </td>
+                </tr>
+            {/each}
+        </tbody>
+    </table>
+    
+</div>
         </div>
       </div>
     </div>
@@ -178,29 +179,18 @@ onMount(() => {
                     <thead>
                         <tr>
                             <th>ID</th>
-                            <th>Bio</th>
-                            <th>CO2</th>
-                            <th>Supplier ID</th>
-                            <th>Customer ID</th>
+                            <th>Name</th>
                         </tr>
                     </thead>
                     <tbody>
                         {#each suppliers as supplier}
                             <tr>
+
                                 <td>
                                     {supplier.id}
                                 </td>
                                 <td>
                                     {supplier.name}
-                                </td>
-                                <td>
-                                    hallo
-                                </td>
-                                <td>
-                                    hallo
-                                </td>
-                                <td>
-                                    name
                                 </td>
                             </tr>
                         {/each}
