@@ -36,7 +36,7 @@
             {#each products as product}
                 <tr>
                     <td>
-                        {product.all.id}
+                        {product.id}
                     </td>
                     <td>
                         {product.name}

@@ -1,9 +1,9 @@
 <script>
     let customer = {
         name: "",
-        co2_rating: "",
-        cumulus_number: "",
-        address_id: "",
+        co2rating: "",
+        cumulusNumber: "",
+        addressId: "",
     };
 
     function addCustomer() {
@@ -13,9 +13,9 @@
 
         // reset input fields
         customer.name = "";
-        customer.co2_rating = "";
-        customer.cumulus_number = "";
-        customer.address_id = "";
+        customer.co2rating = "";
+        customer.cumulusNumber = "";
+        customer.addressId = "";
     }
 </script>
 
@@ -36,7 +36,7 @@
             <input
                 class="form-control"
                 type="number"
-                bind:value={customer.co2_rating}
+                bind:value={customer.co2rating}
             />
         </div>
         <div class="mb-3">
@@ -44,7 +44,7 @@
             <input 
                 class="form-control"
                 type="number">
-                bind:value={customer.cumulus_number}
+                bind:value={customer.cumulusNumber}
                 />
         </div>
         <button on:click={addCustomer} type="button" class="btn btn-primary">

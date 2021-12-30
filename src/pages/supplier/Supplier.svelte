@@ -36,7 +36,7 @@
                         </a>
                     </td>
                     <td>
-                        {supplier.address_id}
+                        {supplier.addressId}
                     </td>
                 </tr>
             {/each}

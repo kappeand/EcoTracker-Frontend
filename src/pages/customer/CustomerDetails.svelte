@@ -13,7 +13,7 @@
     function getCustomer() {
         console.log("getCustomer")
         axios
-            .get("http://localhost:8080/ecotracker/customer/" + customerId)
+            .get("http://localhost:8080/customer/" + customerId)
             .then((response) => {
                 customer = response.data;
             });
@@ -23,6 +23,6 @@
 <div class="mb-5">
     <h1 class="mt-3">Customer (ID: {customerId})</h1>
     <p>Name: {customer.name}</p>
-    <p>CO2-Rating: {customer.co2_rating}</p>
-    <p>Cumulus-Number: {customer.cumulus_number}</p>
+    <p>CO2-Rating: {customer.co2rating}</p>
+    <p>Cumulus-Number: {customer.cumulusNumber}</p>
     </div>

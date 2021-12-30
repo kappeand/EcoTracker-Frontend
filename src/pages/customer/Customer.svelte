@@ -45,10 +45,10 @@
                     {c.co2rating}
                 </td>
                 <td>
-                    {c.cumulusnumber}
+                    {c.cumulusNumber}
                 </td>
                 <td>
-                    {c.addressid}
+                    {c.address.street}
                 </td>
             </tr>
             {/each}
