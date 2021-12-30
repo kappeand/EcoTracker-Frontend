@@ -22,6 +22,7 @@
     }
 
     function deleteCustomer(){
+        console.log(customerId);
         axios
         .delete("http://localhost:8080/customer/" + customerId)
         .then((response)=> {
