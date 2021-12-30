@@ -24,7 +24,7 @@
         console.log(productId);
         axios
         .delete("http://localhost:8080/product/" + productId)
-        .then((response)=> {
+        .then((response) => {
             alert("Product is deleted");
         });
     }
@@ -34,6 +34,9 @@
 <div class="mb-5">
     <h1 class="mt-3">Product (ID: {productId})</h1>
     <p>Name: {product.name}</p>
+    <p>Co2-Emission: {product.co2emission}</p>
+    <p>Price: {product.price}</p>
+    <p>Country of Origin: {product.countryOfOrigin}</p>
 </div>
 
 <button type="button" id="buttonDelete" class="btn btn-primary" on:click={deleteProduct}>
