@@ -16,6 +16,7 @@
             .get("http://localhost:8080/supplier/" + supplierId)
             .then((response) => {
                 supplier = response.data;
+                console.log(supplier)
             });
     }
 </script>
