@@ -42,7 +42,7 @@
             />
         </div>
         <div class="mb-3">
-            <label for="" class="form-label">CO2-Rating</label>
+            <label for="" class="form-label">CO2-Emission</label>
             <input
                 class="form-control"
                 type="number"
@@ -58,10 +58,10 @@
                 />
         </div>
         <div class="mb-3">
-            <label for="" class="form-label">Cumulus-Number</label>
+            <label for="" class="form-label">Herkunft</label>
             <input 
                 class="form-control"
-                type="number"
+                type="text"
                 bind:value={product.countryOfOrigin}
                 />
         </div>
