@@ -216,6 +216,10 @@ onMount(() => {
 
 
 <style>
+
+    h1 {
+        text-align: center;
+    }
     .logo {
         height: 100px;
     }
