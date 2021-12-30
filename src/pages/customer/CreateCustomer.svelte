@@ -1,4 +1,6 @@
 <script>
+ import axios from "axios";
+
     let customer = {
         name: "",
         co2rating: "",
