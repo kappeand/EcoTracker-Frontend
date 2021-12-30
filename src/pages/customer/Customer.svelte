@@ -10,7 +10,7 @@
 
     function getCustomers() {
         axios
-            .get("http://localhost:8080/customer")
+            .get("http://localhost:8080/customer/all")
             .then((response) => {
                 customer = response.data;
             });
