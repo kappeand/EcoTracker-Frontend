@@ -4,6 +4,7 @@ import Home from "./pages/Home.svelte";
 
 import Product from "./pages/product/Product.svelte"
 import CreateProduct from "./pages/product/CreateProduct.svelte"
+import ProductDetails from "./pages/product/ProductDetails.svelte"
 
 
 import Supplier from "./pages/supplier/Supplier.svelte"
@@ -22,6 +23,7 @@ export default {
 
     // product
     '/product': Product,
+    '/product/:id': ProductDetails,
     '/create-product': CreateProduct,
     
     // supplier
