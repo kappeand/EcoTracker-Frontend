@@ -42,9 +42,6 @@
                         </a>
                     </td>
                     <td>
-                        {product.id}
-                    </td>
-                    <td>
                         {product.name}
                     </td>
                     <td>
