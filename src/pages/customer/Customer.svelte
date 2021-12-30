@@ -27,7 +27,7 @@
                 <th>Name</th>
                 <th>CO2 Rating</th>
                 <th>Cumulus number</th>
-                <th>Address ID</th>
+                <th>Address</th>
             </tr>
         </thead>
         <tbody>
@@ -48,7 +48,12 @@
                     {c.cumulusNumber}
                 </td>
                 <td>
-                    {c.address.street}
+                Street:
+                {c.address.street} <br>
+                Number: 
+                {c.address.houseNumber} <br>
+                Postal code:
+                {c.address.postalCode}
                 </td>
             </tr>
             {/each}
