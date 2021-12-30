@@ -50,11 +50,11 @@
         </div>
         <div class="mb-3">
             <label for="" class="form-label">CO2-Rating</label>
-            <input
-                class="form-control"
-                type="number"
-                bind:value={customer.co2rating}
-            />
+            <select class="form-control" bind:value={customer.co2rating}>
+                <option value="Anfaenger"></option>
+                <option value="Fortgeschritten"></option>
+                <option value="Profi"></option>
+            </select>
         </div>
         <div class="mb-3">
             <label for="" class="form-label">Cumulus-Number</label>
