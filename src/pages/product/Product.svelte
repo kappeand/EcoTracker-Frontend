@@ -22,7 +22,7 @@
 
 <div class="mb-5">
     <h1 class="mt-3">List of all Products</h1>
-    <a href="#/createProduct">Add Product</a>
+    <a href="#/create-product">Add Product</a>
     <table class="table">
         <thead>
             <tr>
@@ -36,6 +36,11 @@
         <tbody>
             {#each products as product}
                 <tr>
+                    <td>
+                        <a href={"#/product/" + product.id}>
+                            {product.id}
+                        </a>
+                    </td>
                     <td>
                         {product.id}
                     </td>
