@@ -3,11 +3,24 @@
         name: "",
         co2rating: "",
         cumulusNumber: "",
-        addressId: "",
+        houseNumber:"",
+        postalCode:"",
+        phoneNumber:"",
+        email:"",
     };
 
     function addCustomer() {
-        // TODO: POST with axios (like in CreatePerson.svelte)
+        axios
+        .post("http://localhost:8080/customer", customer)
+            .then((response)=>{
+                alert("Customer added");
+                console.log(response.data);
+            })
+            .catch( (error) => {
+                console.log(error)
+                alert(error)
+            });
+    
 
         console.log("adding customer: " + JSON.stringify(customer));
 
@@ -15,7 +28,10 @@
         customer.name = "";
         customer.co2rating = "";
         customer.cumulusNumber = "";
-        customer.addressId = "";
+        customer.houseNumber = "";
+        customer.postalCode = "";
+        customer.phoneNumber = "";
+        customer.email = "";
     }
 </script>
 
@@ -43,10 +59,15 @@
             <label for="" class="form-label">Cumulus-Number</label>
             <input 
                 class="form-control"
-                type="number">
+                type="number"
                 bind:value={customer.cumulusNumber}
                 />
         </div>
+        <div class="mb-3">
+            <label for="" class="form-label"></label>
+        </div>
+
+
         <button on:click={addCustomer} type="button" class="btn btn-primary">
             Add Customer
         </button>

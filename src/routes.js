@@ -1,6 +1,6 @@
 // Pages
 import Home from "./pages/Home.svelte";
-import DemoPage from "./pages/DemoPage.svelte"
+
 
 import Product from "./pages/product/Product.svelte"
 
@@ -18,9 +18,8 @@ export default {
     // Exact path
     '/': Home,
     '/home': Home,
-    '/demo': DemoPage,
 
-    // infections
+    // product
     '/product': Product,
     
     // supplier

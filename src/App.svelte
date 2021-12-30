@@ -21,9 +21,6 @@
 		<div class="collapse navbar-collapse" id="navbarNavDropdown">
 			<ul class="navbar-nav">
 				<li class="nav-item">
-					<a class="nav-link" href="#/demo">Demo</a>
-				</li>
-				<li class="nav-item">
 					<a class="nav-link" href="#/supplier">Supplier</a>
 				</li>
 				<li class="nav-item">
