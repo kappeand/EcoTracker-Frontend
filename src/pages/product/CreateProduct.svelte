@@ -9,7 +9,7 @@
     };
 
     function addProduct() {
-        axios.post("http://localhost:8080/product/", product)
+        axios.post("http://localhost:8080/product", product)
             .then((response)=>{
                 alert("Product added");
                 console.log(response.data);
@@ -20,7 +20,7 @@
             });
     
 
-        console.log("adding prodcut: " + JSON.stringify(product));
+        console.log("adding product: " + JSON.stringify(product));
 
         // reset input fields
         product.name = "";
