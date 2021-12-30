@@ -132,7 +132,7 @@ onMount(() => {
         <thead>
             <tr>
                 <th>ID</th>
-                <th>Bio</th>
+                <th>Name</th>
                 <th>CO2</th>
                 <th>Price</th>
                 <th>Country Of Origin</th>
