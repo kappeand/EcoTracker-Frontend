@@ -1,14 +1,15 @@
 <script>
+    import axios from "axios";
+
     let product = {
         name:"",
-        co2emission: "",
-        price:"",
+        co2emission: null,
+        price: null,
         countryOfOrigin:"",
     };
 
     function addProduct() {
-        axios
-        .post("http://localhost:8080/product/", product)
+        axios.post("http://localhost:8080/product/", product)
             .then((response)=>{
                 alert("Product added");
                 console.log(response.data);
@@ -23,10 +24,11 @@
 
         // reset input fields
         product.name = "";
-        customer.co2emission = "";
-        customer.price = "";
-        customer.countryOfOrigin = "";
+        product.co2emission = null;
+        product.price = null;
+        product.countryOfOrigin = "";
     }
+
 </script>
 
 <div class="mb-5">
