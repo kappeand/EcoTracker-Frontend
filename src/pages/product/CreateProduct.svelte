@@ -2,23 +2,23 @@
     import axios from "axios";
 
     let product = {
-        name:"",
+        name: "",
         co2emission: null,
         price: null,
-        countryOfOrigin:"",
+        countryOfOrigin: "",
     };
 
     function addProduct() {
         axios.post("http://localhost:8080/product", product)
-            .then((response)=>{
+            .then((response) => {
                 alert("Product added");
                 console.log(response.data);
             })
-            .catch( (error) => {
+            .catch((error) => {
                 console.log(error)
                 alert(error)
             });
-    
+
 
         console.log("adding product: " + JSON.stringify(product));
 
@@ -38,34 +38,34 @@
         <div class="mb-3">
             <label for="" class="form-label">Name</label>
             <input
-                class="form-control"
-                type="text"
-                bind:value={product.name}
+                    class="form-control"
+                    type="text"
+                    bind:value={product.name}
             />
         </div>
         <div class="mb-3">
             <label for="" class="form-label">CO2-Emission</label>
             <input
-                class="form-control"
-                type="number"
-                bind:value={product.co2emission}
+                    class="form-control"
+                    type="number"
+                    bind:value={product.co2emission}
             />
         </div>
         <div class="mb-3">
             <label for="" class="form-label">Cumulus-Number</label>
-            <input 
-                class="form-control"
-                type="number"
-                bind:value={product.price}
-                />
+            <input
+                    class="form-control"
+                    type="number"
+                    bind:value={product.price}
+            />
         </div>
         <div class="mb-3">
             <label for="" class="form-label">Herkunft</label>
-            <input 
-                class="form-control"
-                type="text"
-                bind:value={product.countryOfOrigin}
-                />
+            <input
+                    class="form-control"
+                    type="text"
+                    bind:value={product.countryOfOrigin}
+            />
         </div>
         <div class="mb-3">
             <label for="" class="form-label"></label>

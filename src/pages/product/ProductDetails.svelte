@@ -20,13 +20,13 @@
             });
     }
 
-    function deleteProduct(){
+    function deleteProduct() {
         console.log(productId);
         axios
-        .delete("http://localhost:8080/product/" + productId)
-        .then((response) => {
-            alert("Product is deleted");
-        });
+            .delete("http://localhost:8080/product/" + productId)
+            .then((response) => {
+                alert("Product is deleted");
+            });
     }
 
 </script>
@@ -39,6 +39,6 @@
     <p>Country of Origin: {product.countryOfOrigin}</p>
 </div>
 
-<button type="button" id="buttonDelete" class="btn btn-primary" on:click={deleteProduct}>
+<button class="btn btn-primary" id="buttonDelete" on:click={deleteProduct} type="button">
     Delete
-    </button>
+</button>

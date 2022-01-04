@@ -1,6 +1,6 @@
 <script>
     import axios from "axios";
-    import { onMount } from "svelte";
+    import {onMount} from "svelte";
 
     let customer = [];
 
@@ -25,17 +25,17 @@
     <br>
     <table class="table">
         <thead>
-            <tr>
-                <th>ID</th>
-                <th>Name</th>
-                <th>CO2 Rating</th>
-                <th>Cumulus number</th>
-                <th>Address</th>
-            </tr>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>CO2 Rating</th>
+            <th>Cumulus number</th>
+            <th>Address</th>
+        </tr>
         </thead>
         <tbody>
-            {#each customer as c}
-                <tr>
+        {#each customer as c}
+            <tr>
                 <td>
                     <a href={"#/customer/" + c.id}>
                         {c.id}
@@ -51,16 +51,16 @@
                     {c.cumulusNumber}
                 </td>
                 <td>
-                Street:
-                {c.address.street} <br>
-                Number: 
-                {c.address.houseNumber} <br>
-                Postal code:
-                {c.address.postalCode}
+                    Street:
+                    {c.address.street} <br>
+                    Number:
+                    {c.address.houseNumber} <br>
+                    Postal code:
+                    {c.address.postalCode}
                 </td>
             </tr>
-            {/each}
-            
+        {/each}
+
         </tbody>
     </table>
 </div>

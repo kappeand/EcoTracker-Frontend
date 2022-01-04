@@ -21,13 +21,13 @@
             });
     }
 
-    function deleteCustomer(){
+    function deleteCustomer() {
         console.log(customerId);
         axios
-        .delete("http://localhost:8080/customer/" + customerId)
-        .then((response)=> {
-            alert("Customer was deleted");
-        });
+            .delete("http://localhost:8080/customer/" + customerId)
+            .then((response) => {
+                alert("Customer was deleted");
+            });
     }
 </script>
 
@@ -39,10 +39,10 @@
     <p>Cumulus Number: {customer.cumulusNumber}</p>
     <p>Phone Number: {address.phoneNumber}</p>
     <p>Email: {address.email}</p>
-    </div>
-    <br>
-<button type="button" id="buttonDelete" class="btn btn-primary" on:click={deleteCustomer}>
-Delete
+</div>
+<br>
+<button class="btn btn-primary" id="buttonDelete" on:click={deleteCustomer} type="button">
+    Delete
 </button>
 
 

@@ -20,13 +20,13 @@
             });
     }
 
-    function deleteSupplier(){
+    function deleteSupplier() {
         console.log(supplierId);
         axios
-        .delete("http://localhost:8080/supplier/" + supplierId)
-        .then((response)=> {
-            alert("Supplier is deleted");
-        });
+            .delete("http://localhost:8080/supplier/" + supplierId)
+            .then((response) => {
+                alert("Supplier is deleted");
+            });
     }
 
 </script>

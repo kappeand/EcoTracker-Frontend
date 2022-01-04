@@ -1,29 +1,31 @@
 <script>
- import axios from "axios";
+    import axios from "axios";
 
     let customer = {
         name: "",
         co2rating: "",
         cumulusNumber: "",
-        adress:{houseNumber:"",
-        postalCode:"",
-        phoneNumber:"",
-        email:""}
-        
+        address: {
+            houseNumber: "",
+            postalCode: "",
+            phoneNumber: "",
+            email: ""
+        }
+
     };
 
     function addCustomer() {
         axios
-        .post("http://localhost:8080/customer", customer)
-            .then((response)=>{
+            .post("http://localhost:8080/customer", customer)
+            .then((response) => {
                 alert("Customer added");
                 console.log(response.data);
             })
-            .catch( (error) => {
+            .catch((error) => {
                 console.log(error)
                 alert(error)
             });
-    
+
 
         console.log("adding customer: " + JSON.stringify(customer));
 
@@ -43,35 +45,35 @@
 
     <form>
         <div class="mb-3">
-            <label for="" class="form-label">Name</label>
+            <label class="form-label" for="">Name</label>
             <input
-                class="form-control"
-                type="text"
-                bind:value={customer.name}
+                    bind:value={customer.name}
+                    class="form-control"
+                    type="text"
             />
         </div>
         <div class="mb-3">
-            <label for="" class="form-label">CO2-Rating</label>
-            <select class="form-control" bind:value={customer.co2rating}>
+            <label class="form-label" for="">CO2-Rating</label>
+            <select bind:value={customer.co2rating} class="form-control">
                 <option>Anfaenger</option>
                 <option>Fortgeschritten</option>
                 <option>Profi</option>
             </select>
         </div>
         <div class="mb-3">
-            <label for="" class="form-label">Cumulus-Number</label>
-            <input 
-                class="form-control"
-                type="number"
-                bind:value={customer.cumulusNumber}
-                />
+            <label class="form-label" for="">Cumulus-Number</label>
+            <input
+                    bind:value={customer.cumulusNumber}
+                    class="form-control"
+                    type="number"
+            />
         </div>
         <div class="mb-3">
-            <label for="" class="form-label"></label>
+            <label class="form-label" for=""></label>
         </div>
 
 
-        <button on:click={addCustomer} type="button" class="btn btn-primary">
+        <button class="btn btn-primary" on:click={addCustomer} type="button">
             Add Customer
         </button>
     </form>

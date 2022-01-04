@@ -25,7 +25,7 @@ export default {
     '/product': Product,
     '/product/:id': ProductDetails,
     '/create-product': CreateProduct,
-    
+
     // supplier
     '/supplier': Supplier,
     '/supplier/:id': SupplierDetails,

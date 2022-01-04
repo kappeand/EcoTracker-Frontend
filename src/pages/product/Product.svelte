@@ -1,6 +1,6 @@
 <script>
     import axios from "axios";
-    import { onMount } from "svelte";
+    import {onMount} from "svelte";
 
     let products = [];
 
@@ -17,7 +17,6 @@
     }
 
 
-    
 </script>
 
 <div class="mb-5">
@@ -25,39 +24,39 @@
     <a href="#/create-product">Add Product</a>
     <table class="table">
         <thead>
-            <tr>
-                <th>ID</th>
-                <th>Name</th>
-                <th>CO2</th>
-                <th>Price</th>
-                <th>Country Of Origin</th>
-            </tr>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>CO2</th>
+            <th>Price</th>
+            <th>Country Of Origin</th>
+        </tr>
         </thead>
         <tbody>
-            {#each products as product}
-                <tr>
-                    <td>
-                        <a href={"#/product/" + product.id}>
-                            {product.id}
-                        </a>
-                    </td>
-                    <td>
-                        {product.name}
-                    </td>
-                    <td>
-                        {product.co2emission}
-                    </td>
-                    <td>
-                        {product.price}
-                    </td>
-                    <td>
-                        {product.countryOfOrigin}
-                    </td>
-                </tr>
-            {/each}
+        {#each products as product}
+            <tr>
+                <td>
+                    <a href={"#/product/" + product.id}>
+                        {product.id}
+                    </a>
+                </td>
+                <td>
+                    {product.name}
+                </td>
+                <td>
+                    {product.co2emission}
+                </td>
+                <td>
+                    {product.price}
+                </td>
+                <td>
+                    {product.countryOfOrigin}
+                </td>
+            </tr>
+        {/each}
         </tbody>
     </table>
-    
+
 </div>
 
 <style>
